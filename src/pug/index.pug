@@ -1,0 +1,191 @@
+extends layout
+block main 
+	main
+		section.main-block
+			.container 
+				.main-block__wrap
+					.main-block__content
+						h1.main-block__title Доверьте аутсорс бухгалтерского <br> и налогового учёта
+						.main-block__list 	
+							span.main-block__list-title Любая:
+							.main-block__list-item 
+								img(loading="lazy" src=require('../images/icn1.svg'), width="42" height="42" alt='')
+								.main-block__list-item-block 	
+									span Численность штата
+									span ведём компании даже с 500 собрудниками
+							.main-block__list-item 
+								img(loading="lazy" src=require('../images/icn2.svg'), width="42" height="42" alt='')
+								.main-block__list-item-block 	
+									span Структура юридических лиц
+									span иностранные компании, ООО, стартапы, микроорганизации, холдинги
+							.main-block__list-item 
+								img(loading="lazy" src=require('../images/icn3.svg'), width="42" height="42" alt='')
+								.main-block__list-item-block 	
+									span Система налогооблажения
+									span упрощённая, общая, патент
+						.main-block__btns
+							button.btn.btn--type1.open-modal Оставить заявку
+							button.btn.btn--type2.open-modal Попробовать 2 недели
+
+					include modules/feedback-main-block
+			//- <svg xmlns="http://www.w3.org/2000/svg" fill="#fff" viewBox="0 0 100 20" preserveAspectRatio="none"><polygon points="0,0 100,0 0,20" /></svg>
+		section.advantages 
+			.container 
+				h2 Надёжнее бухгалтера-фрилансера <br> Дешевле штатных сотрудников <br> Вовлечёнее сервиса-калькулятора 
+				.advantages__wrap
+					.item
+						h3.item__title Знакомый бухгалтер/фрилансер/Штатный бухгалтер/Отдел
+						ul.item__list 
+							li.item__row
+								img(loading="lazy" src=require('../images/plus.svg'), width="28" height="28" alt='')
+								span Опытный штатный бухглалтер стоит от 40 000 руб. + налоги + отпуски и выплаты + офис и рабочее место 
+							li.item__row 
+								img(loading="lazy" src=require('../images/minus.svg'), width="28" height="28" alt='')
+								span У фрилансера не понятен загруз и сроки выполнения задач
+							li.item__row 
+								img(loading="lazy" src=require('../images/minus.svg'), width="28" height="28" alt='')
+								span И фрилансер и штатных бухгалтер не может разбираться во всех тонкостях разных налогов и  кадрового учёта
+					.item
+						h3.item__title Автоматизированные сервисы калькуляторы
+						ul.item__list
+							li.item__row
+								img(loading="lazy" src=require("../images/plus.svg"), width="28" height="28" alt="")
+								span Недорогие тарифы от 5 000
+							li.item__row
+								img(loading="lazy" src=require("../images/minus.svg"), width="28" height="28" alt="")
+								span Неудобные чат - боты, которые некорректно работают
+							li.item__row
+								img(loading="lazy" src=require("../images/minus.svg"), width="28" height="28" alt="")
+								span Возможность частых ошибок в документах и актах, даже при автоматизации
+							li.item__row
+								img(loading="lazy" src=require("../images/minus.svg"), width="28" height="28" alt="")
+								span Никто не думает о том, как сократить ваши налоги
+					.item
+						h3.item__title.--orange БухКонсалт
+						ul.item__list 
+							li.item__row
+								img(loading="lazy" src=require("../images/plus.svg"), width="28" height="28" alt="")
+								span Конфиденциальность данные:  подписываем NDA, храним данные на защищённом сервере Все данные передаются по зашифрованному SSL каналу
+							li.item__row
+								img(loading="lazy" src=require("../images/plus.svg"), width="28" height="28" alt="")
+								span Точность сроков: за счёт штата бухгалтеров даже при аврале быстро решим задачу
+							li.item__row
+								img(loading="lazy" src=require("../images/plus.svg"), width="28" height="28" alt="")
+								span В течение 30 минут уже прступаем к решению любой задачи
+							li.item__row
+								img(loading="lazy" src=require("../images/plus.svg"), width="28" height="28" alt="")
+								span Стоимость от  15 000
+							li.item__row
+								img(loading="lazy" src=require("../images/plus.svg"), width="28" height="28" alt="")
+								span Работем 24 / 7 / 365: без праздников, выходных, и даже отвечаем в ночное время
+							li.item__row
+								img(loading="lazy" src=require("../images/plus.svg"), width="28" height="28" alt="")
+								span Думаем как сократить налоги и снять с вас загруз
+							li.item__row
+								img(loading="lazy" src=require("../images/plus.svg"), width="28" height="28" alt="")
+								span Команда бухгалтеров и налоговиков из разных сфер, прошешдых жёстки отбор
+						button.btn.btn--type3.open-modal Оставить заявку
+
+		section.delegation#services
+			.container 
+				.delegation__head
+					h2 Делегируйте бухгалтерию, кадровый учёт <br>и общение с налоговой под “ключ” 
+					span От вас требуется только <b>20 минут</b> на общение с бухгалтером <b>1 раз в квартал</b>
+				.delegation__wrap 
+					.item
+						img(loading="lazy" src=require('../images/d1.svg'), width="34" height="34" alt='')
+						span Обработка первичной документации
+					.item
+						img(loading="lazy" src=require('../images/d2.svg'), width="34" height="34" alt='')
+						span Сдача очетности в соответствующие инстанции
+					.item
+						img(loading="lazy" src=require('../images/d3.svg'), width="34" height="34" alt='')
+						span Введение документооборот
+					.item
+						img(loading="lazy" src=require('../images/d4.svg'), width="34" height="34" alt='')
+						span Полное общение с налоговыми органами
+					.item
+						img(loading="lazy" src=require('../images/d5.svg'), width="34" height="34" alt='')
+						span Оптимизация налогооблагаемой базы и управление налоговыми рисками
+					.item
+						img(loading="lazy" src=require('../images/d6.svg'), width="34" height="34" alt='')
+						span Помощь в защите для работодателей
+					.item
+						img(loading="lazy" src=require('../images/d7.svg'), width="34" height="34" alt='')
+						span Помощь в ведении участков бухгалтерии
+					.item
+						img(loading="lazy" src=require('../images/d8.svg'), width="34" height="34" alt='')
+						span Подготовка бухгалтерских документов для третьих лиц
+					.item
+						img(loading="lazy" src=require('../images/d9.svg'), width="34" height="34" alt='')
+						span Расчет налогов
+					.item
+						img(loading="lazy" src=require('../images/d10.svg'), width="34" height="34" alt='')
+						span Работа со счетами компании
+					.item
+						img(loading="lazy" src=require('../images/d11.svg'), width="34" height="34" alt='')
+						span Помощь в работе с особенностями бухгалтерии в разных отраслях
+					.item
+						img(loading="lazy" src=require('../images/d12.svg'), width="34" height="34" alt='')
+						span Помощь в работе с тендерами 
+					.item
+						img(loading="lazy" src=require('../images/d13.svg'), width="34" height="34" alt='')
+						span Подготовка учета и отчетности к внешнему финансированию 
+					.item
+						img(loading="lazy" src=require('../images/d14.svg'), width="34" height="34" alt='')
+						span Помощь с интеграцией с любыми операторами ЭДО
+					.item
+						img(loading="lazy" src=require('../images/d15.svg'), width="34" height="34" alt='')
+						span Организуем хранение оригиналов документов во внешнем архиве
+
+				button.btn.btn--type1.delegation__btn Показать ещё
+
+		section.optimization#advantages 
+			.container 
+				h2 За 7 лет накопили свою базу знаний и оптимизировали <br> все процессы, чтоб вы забыли про бухгалтерию
+				.optimization__wrap 
+					.item
+						.item__head 
+							img(loading="lazy" src=require('../images/o1.svg'), width="66" height="66" alt='')
+							span На связи 24/7/365
+						.item__content 
+							p Без праздников, выходных, и даже отвечаем в ночное время. Стараемся все задачи решать в течение часа, в любом удобном вам мессенджере
+					.item
+						.item__head 
+							img(loading="lazy" src=require('../images/o2.svg'), width="66" height="66" alt='')
+							span Работаем прозрачно
+						.item__content 
+							p Высылаем подробный недельный отчет о проделанной работе с разбивкой по людям/часам. Статусы всех задач онлайн - в любой момент смотрите прогресс. На одном языке с вами - без непонятной терминологии
+					.item
+						.item__head 
+							img(loading="lazy" src=require('../images/o3.svg'), width="66" height="66" alt='')
+							span Финансовая компенсация за ошибки
+						.item__content 
+							p До 5 млн компенсация при нашей ошибки. Но за 5 лет и не было ни одной ошибки среди 235 клиентов, из-за нашей дотошности, жёсткого кадрового отбора бухгалтеров и регламентов внутри компании
+					.item
+						.item__head 
+							img(loading="lazy" src=require('../images/o4.svg'), width="66" height="66" alt='')
+							span Ответим в течении 15 минут
+						.item__content 
+							p Проверяем почту каждые 15 минут. Skype, Telegram, WhatsApp - ещё чаще. Отвечаем на телефонный звонок не позднее 5-го гудка. Решаем задачи быстро, так как наши сотрудники находятся в одном офисе
+					.item
+						.item__head 
+							img(loading="lazy" src=require('../images/o5.svg'), width="66" height="66" alt='')
+							span Отдельная команда под проект
+						.item__content
+							p Отедельная команда под каждого клиента - все специалисты будут в курсе задач. Подключаем узкопрофильных экспертов. В случае, если бухгалтер не устраивает - заменим без лишних вопросов. Используем ПО для автоматизации, но всегда проверяем в ручную.
+					.item
+						.item__head 
+							img(loading="lazy" src=require('../images/o6.svg'), width="66" height="66" alt='')
+							span Оптимизация налогов
+						.item__content 
+							p Стараемся оптимизировать налоги - в среднем снижаем налоговую нагрузку на 27%. При этом сами отвечаем на все требования и запросы ФНС. Сообщим о рисках раньше, чем банк заблокирует расчетный счет по 115-ФЗ или ИФНС назначит проверку
+
+		include modules/audit
+
+		include modules/steps
+
+		include modules/sale
+
+		include modules/team
+		include modules/clients

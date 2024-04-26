@@ -1,0 +1,94 @@
+.btn {
+    position: relative;
+    text-transform: uppercase;
+    font-size: 18px;
+    font-weight: 600;
+    padding: 0 53px;
+    border-radius: 10px 10px;
+    height: 58px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    align-self: flex-start;
+    justify-content: center;
+    overflow: hidden;
+    background-color: #fff;
+    cursor: pointer;
+    &::before {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 4px;
+        border-radius: 0 0 20px 20px;
+    }
+    &--type1 {
+        color: #fff;
+        background-color: var(--color-orange);
+        box-shadow: 0px 4px 0px #d25828;
+    }
+    &--type2 {
+        color: var(--color-orange);
+        background-color: #fff;
+        box-shadow: 0px 4px 0px #d25828;
+    }
+    &--type3 {
+        color: #fff;
+        background-color: var(--color-orange);
+    }
+    &--submit {
+        color: var(--color-orange);
+        padding: 0;
+    }
+    @media (max-width: 767px) {
+        padding: 0;
+    }
+}
+
+.btn::after {
+    content: "";
+    position: absolute;
+    top: -50%;
+    right: -50%;
+    bottom: -50%;
+    left: -50%;
+    background: linear-gradient(
+        to bottom,
+        rgba(229, 172, 142, 0),
+        rgba(255, 255, 255, 0.5) 50%,
+        rgba(229, 172, 142, 0)
+    );
+    transform: rotateZ(60deg) translate(-5em, 7.5em);
+}
+
+.btn:after,
+button:after {
+    animation: sheen 2s forwards;
+    animation-iteration-count: infinite;
+    animation-fill-mode: forwards;
+}
+
+@keyframes sheen {
+    100% {
+        transform: rotateZ(60deg) translate(1em, -9em);
+    }
+}
+
+
+.btn.jump {
+    animation: jump 1s; 
+    position: relative;
+    overflow: hidden;
+}
+
+@keyframes jump {
+    0% {
+        position: relative;
+        bottom: -4px;
+    }
+    100% {
+        position: relative;
+        bottom: 0;
+    }
+}

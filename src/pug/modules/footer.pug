@@ -1,0 +1,33 @@
+footer.footer
+	.container 
+		.footer__wrap 
+			.footer__contacts 
+				h2 Контакты
+				.footer__list 
+					.footer__list-item 
+						img(loading="lazy" src=require('../../images/phone.svg'), width="42" height="42" alt='')
+						.footer__list-block 
+							span Телефон
+							a(href="tel:88002002398") 8 800 200 23 98 
+					.footer__list-item 
+						img(loading="lazy" src=require('../../images/metka.svg'),  width="42" height="42" alt='')
+						.footer__list-block 
+							span Адрес
+							a Дмитровское шоссе, 64к1
+				button.btn.btn--type2.footer__btn.open-modal ЗАДАТЬ ВОПРОС
+			.feedback.feedback__footer 
+				.feedback__head
+					h3 Остались вопросы?
+					span.feedback__subitle Остались заявки на сайте, мы позвоним вам в течении 15 минут
+				form.feedback__form
+					input(type="text" placeholder="Имя" name="name" required)
+					input.tel(placeholder="+7 (___) ___ - __ - __" name="phone" required)
+					button.btn.btn--submit.submit(type="submit") Оставить заявку
+					input.visitor_uid(value="" hidden)
+				span.feedback__agree Нажимая на кнопку вы даете соглашение на обработку 
+					a(href="policy.html" target="_blank") персональных данных
+include modal
+#topScroll
+.widjets
+	a(href="https://wa.me/89891495059" target="_blank").widget-whatsapp
+	a(href="https://t.me/Buhkonsalt1c" target="_blank").widget-telegram

@@ -1,0 +1,13 @@
+.social {
+    color: #fff;
+    h4 {
+        margin-bottom: 20px;
+    }
+}
+
+.social__links {
+    position: relative;
+    display: flex;
+    gap: 14px;
+    z-index: 10;
+}

@@ -1,0 +1,61 @@
+.delegation {
+    background-image: url("../images/q2.svg");
+    background-repeat: no-repeat;
+    background-position: right center;
+    h2 {
+        margin-bottom: 24px;
+        @media (max-width: 767px) {
+            margin-bottom: 16px;
+        }
+    }
+    @media (max-width: 767px) {
+        background-image: none;
+    }
+}
+
+.delegation__head {
+    margin-bottom: 42px;
+    @media (max-width: 767px) {
+        margin-bottom: 24px;
+    }
+}
+
+.delegation__wrap {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    box-shadow: 0px 0px 23px rgba(0, 0, 0, 0.08);
+    border-radius: 20px;
+    overflow: hidden;
+    margin-bottom: 32px;
+
+    .item {
+        min-height: 112px;
+        display: flex;
+        align-items: center;
+        text-align: left;
+        font-size: 16px;
+        font-weight: 400;
+        gap: 24px;
+        padding: 24px;
+        outline: 1px solid rgba(202, 202, 202, 0.4);
+        @media (max-width: 767px) {
+            height: 88px;
+            font-size: 14px;
+        }
+        &.hidden {
+            display: none;
+        }
+    }
+    @media (max-width: 767px) {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+.delegation__btn {
+    width: 100%;
+    display: none;
+    @media (max-width: 767px) {
+        display: flex;
+    }
+}

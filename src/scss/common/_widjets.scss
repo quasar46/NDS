@@ -1,0 +1,82 @@
+.widjets {
+    position: fixed;
+    right: 32px;
+    bottom: 32px;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    z-index: 20;
+}
+
+.widget-whatsapp {
+    width: 76px;
+    height: 76px;
+    z-index: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100%;
+    background: url(../images/whatsapp-button.png) center center no-repeat
+        #3cb27f;
+    transition: transform 0.15s;
+    position: relative;
+}
+
+.widget-telegram {
+    width: 76px;
+    height: 76px;
+    z-index: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100%;
+    background: url(../images/whatsapp-button2.svg) center center no-repeat
+        #29b6f6;
+    transition: transform 0.15s;
+    position: relative;
+}
+
+.widget-whatsapp::before {
+    content: "";
+    z-index: 1;
+    display: block;
+    position: absolute;
+    box-sizing: border-box;
+    left: 50%;
+    top: 50%;
+    background: 0 0;
+    border: 2px solid #3cb27f;
+    border-radius: 50%;
+    animation: 3s infinite pulse;
+}
+
+.widget-telegram::before {
+    content: "";
+    z-index: 1;
+    display: block;
+    position: absolute;
+    box-sizing: border-box;
+    left: 50%;
+    top: 50%;
+    background: 0 0;
+    border: 2px solid #3cb27f;
+    border-radius: 50%;
+    animation: 3s infinite pulse;
+}
+
+@keyframes pulse {
+    0%,
+    100% {
+        width: 76px;
+        height: 76px;
+        margin-top: -38px;
+        margin-left: -38px;
+    }
+    80% {
+        width: 120px;
+        height: 120px;
+        margin-top: -60px;
+        margin-left: -60px;
+        border-width: 1px;
+    }
+}

@@ -1,0 +1,17 @@
+header.header
+	.container 
+		.header__wrap 
+			a(href="/").header__logo
+				img(loading="lazy" src=require('../../images/logo.svg'), alt='')
+			.header__content
+				nav.header__nav 
+					a(href="/#services") Услуги
+					a(href="/#advantages") Преимущества
+					a(href="/#price") Цена
+					a(href="/#steps") Почему мы?
+					a(href="/#teams") Команда
+					a(href="/#clients") Клиенты
+					a.active Контакты
+				a.header__tel(href="tel:8 800 200 23 98") 8 800 200 23 98
+			button.header__menu 
+				//- img(loading="lazy" src=require('../../images/burger-menu.svg'), alt='')

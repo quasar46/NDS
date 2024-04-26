@@ -1,0 +1,13 @@
+.overlay
+	.feedback
+		button.feedback__close
+			img(loading="lazy" src=require('../../images/close.png'), alt='')
+		.feedback__head 	
+			h3 Получите деньги обратно, если не устроят первые две недели работы
+		form.feedback__form(method="POST" action="/api/v2/leads")
+			input(type="text" placeholder="Имя" name="name" required)
+			input.tel(placeholder="+7 (___) ___ - __ - __" name="phone" required)
+			button.btn.btn--submit.submit(type="submit") ПОПРОБОВАТЬ 2 НЕДЕЛИ
+			input.visitor_uid(value="" hidden)
+		span.feedback__agree Нажимая на кнопку вы даете соглашение на обработку 
+			a(href="policy.html" target="_blank") персональных данных

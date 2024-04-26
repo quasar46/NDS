@@ -1,0 +1,25 @@
+.clients {
+    h2 {
+        margin-bottom: 42px;
+        @media (max-width: 767px) {
+            margin-bottom: 24px;
+        }
+    }
+}
+
+.clients__wrap {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    @media (max-width: 767px) {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+.clients__pic {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
